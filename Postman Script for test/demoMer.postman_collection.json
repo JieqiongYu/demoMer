@@ -106,6 +106,35 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "endPoint4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/demoMer/mer/demo/image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"demoMer",
+						"mer",
+						"demo",
+						"image"
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }

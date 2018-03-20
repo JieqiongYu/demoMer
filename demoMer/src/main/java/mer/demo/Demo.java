@@ -1,5 +1,7 @@
 package mer.demo;
 
+import java.io.File;
+import java.net.URL;
 import javax.validation.constraints.NotBlank;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
@@ -8,6 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response.ResponseBuilder;
 import mer.entity.Entity1;
 import mer.entity.Entity2;
 import mer.entity.Entity3;
@@ -71,4 +74,14 @@ public class Demo {
     }
     
     
+    @GET
+    @Path("image")
+    @Produces("image/png")
+    public Response endPOint4() {
+        URL url = getClass().getResource("/image/github.png");
+        File file = new File(url.getPath());
+        ResponseBuilder response = Response.ok((Object)file);
+        response.header("Content-Disposition", "attachment; filename=image_from_server.png");
+        return response.build();
+    }
 }
