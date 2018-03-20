@@ -1,0 +1,111 @@
+{
+	"info": {
+		"name": "demoMer",
+		"_postman_id": "d2ba780c-a0b5-0f76-ee8f-3fc5c46b982c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "endPoint1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/demoMer/mer/demo/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"demoMer",
+						"mer",
+						"demo",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "endPoint2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Mer",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/demoMer/mer/demo/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"demoMer",
+						"mer",
+						"demo",
+						"hello"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "endPoint3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/demoMer/mer/demo/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"demoMer",
+						"mer",
+						"demo",
+						"json"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
